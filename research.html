@@ -18,7 +18,7 @@
 		.inactiveCustom {color:#A9A9A9}
 	</style>
 
-	<link rel="shortcut icon" type="image/png" href="images/profileCircular.png"/>
+	<link rel="shortcut icon" type="image/png" href="/static/Images/Profile/profileCircular.png"/>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -28,7 +28,7 @@
 	<meta name="keywords" content="machine learning, artificial intelligence, coding">
 
 	<meta property="og:title" content="Mayank's HomePage">
-	<meta property="og:image" content="images/profileCircular512X512.png">
+	<meta property="og:image" content="/static/Images/Profile/profileCircular512X512.png">
 	<meta property="og:description" content="Mayank Kumar Singh's Home Page">
 
 	<title>Mayank Kumar Singh</title>
@@ -45,7 +45,6 @@
 
 
 </head>
-	
 <body>
 
 <div class="container pt-5 pb-3">
@@ -64,10 +63,10 @@
 							<a class="nav-link onHoverDark inactiveCustom" href="/">Home</a>
 						</div>
 						<div class="col">
-							<a class="nav-link onHoverDark activeCustom" href="/profile">Profile</a>
+							<a class="nav-link onHoverDark inactiveCustom" href="/profile">Profile</a>
 						</div>
 						<div class="col">
-							<a class="nav-link onHoverDark inactiveCustom" href="/research">Research</a>
+							<a class="nav-link onHoverDark activeCustom" href="/research">Research</a>
 						</div>
 					</div>
 				</div>
@@ -85,23 +84,54 @@
 					</div>
 				</div>
 			</div>
-			
+
 		</div>
 	</div>
 </div>
 <div class="container">
 	<div class="row">
 		<div class="col-lg-8">
-			<div class="row shadow bg-light mx-1">
-				<div class="col">
-					<div class="px-4 pt-5 mb-5">
-						<h2>My Resume <a href="pdf/CV_2Page.pdf" target="_blank" class="hrefWithoutDecoration"><button type="button" class="btn btn-light btn-outline-dark">View the pdf version</button></h2>
-					</div>
-					<div class="p-0 shadow m-3">
-						<a href="pdf/CV_2Page.pdf" target="_blank"><img src="images/ResumeSS.png" width="100%"></a>
-					</div>
+			<div class="shadow row bg-light mb-5 mx-1">
+				<div class="col px-4 pt-5">
+					<h2>Research <button type="button" class="btn btn-light btn-outline-dark" onClick="window.open('https://scholar.google.com/citations?hl=en&authuser=1&user=ky_QjGgAAAAJ');">Visit my google scholar profile</button></h2>
+					<img class="pt-3" src="images/research.png" width="100%">
+				</div>
+				<div class="px-4 pt-5 pb-4">
+					<p>
+						Last Updated: 26th April
+					</p>
+					<p>
+						My research goal is to understand what intelligence means and trying to reproduce it artificially so that we can have a tool which will reduce the development process drastically in every field. I believe that to achieve this we would require a good understanding of psychology, and an intutive sense of why and how humans function.
+					</p>
+					<p>
+						I started my journey in the academia by focusing on Computer Vision because of its popularity and ease of applicatoin but my interests have diverged into graphs and audio as well.
+					</p>
+					<p>
+						I have mentioned some brief description of my publications below. To get a list of all my publications please visit <a class="" href="/publications">here <i class="fa fa-external-link" style="font-size:12px"></i></a>.
+					</p>
 				</div>
 			</div>
+
+			<div class="shadow row bg-light mb-5 mt-4 mx-1">
+				<a href="/research/GraphConvolution"><img src="images/HowGCNNWorks.png" width="100%"></a>
+				<div class="px-4 pt-5 pb-4">
+					<a class="hrefWithoutDecoration" href="https://arxiv.org/abs/2005.12147" target="_blank"><h2>NENET: An Edge Learnable Network for Link Prediction in Scene Text <i class="fa fa-external-link" style="font-size:12px"></i></h2></a>
+					<p>Last Updated: 27th May</p>
+					<p>Text detection in scenes based on deep neural networks have shown promising results. Instead of using word bounding box regression, recent state-of-the-art methods have started focusing on character bounding box and pixel-level prediction. This necessitates the need...</p>
+					<button type="button" class="btn btn-light btn-outline-dark" onClick="window.location = '/research/GraphConvolution';">Continue Reading</button>
+				</div>
+			</div>
+
+			<div class="row bg-light mb-5 shadow mx-1">
+				<a href="/research/VoiceSeparation"><img src="images/ICASSP2020.png" width="100%"></a>
+				<div class="px-4 pt-5 pb-4">
+					<a class="hrefWithoutDecoration" href="https://ieeexplore.ieee.org/document/9053845" target="_blank"><h2>Improving Voice Separation by Incorporating End-to-End Speech Recognition <i class="fa fa-external-link" style="font-size:12px"></i></h2></a>
+					<p>Last Updated: 26th April</p>
+					<p>Recent work in speech separation works good in constrained environments but still perform poorely in noisy backgrounds. To further improve voice separation in noisy environments we propose using transfer learning from Automatic Speech Recognition Models. We extract…</p>
+					<button type="button" class="btn btn-light btn-outline-dark" onClick="window.location = '/research/VoiceSeparation';">Continue Reading</button>
+				</div>
+			</div>
+
 		</div>
 		<div class="col-lg-4 pt-5">
 			<div class="row py-5 px-4 bg-light mb-5 shadow mx-1">
@@ -116,15 +146,17 @@
 			</div>
 
 			<div class="row pt-5 pb-3 pl-3 bg-light mb-5 shadow mx-1">
-				<h5 class="pb-2"><b>Contact Information</b></h5>
-				<p>
-					<a href="mailto:mayank2220singh@gmail.com"><strong>Gmaild: </strong> mayank2220singh@gmail.com</a><br><br>
-					<a href="https://www.linkedin.com/in/mayank-singh-a37713155/"><strong>LinkedIn</strong> </a><br><br>
-					<a href="https://scholar.google.com/citations?hl=en&authuser=1&user=ky_QjGgAAAAJ"><strong>Good Scholar</strong> </a><br><br>
-					<a href="https://github.com/mayank-git-hub"><strong>GitHub</strong> </a><br><br>
-					<a href="https://medium.com/@mayank2220singh"><strong>Medium</strong> </a><br><br>
-					<a href="tel:+91 84549 51729"><strong>Call: +91 84549 51729</strong> </a>
-				</p>
+				<div class="col">
+					<h5 class="pb-2"><b>Contact Information</b></h5>
+					<p>
+						<a href="mailto:mayank2220singh@gmail.com"><strong>Gmaild: </strong> mayank2220singh@gmail.com</a><br><br>
+						<a href="https://www.linkedin.com/in/mayank-singh-a37713155/"><strong>LinkedIn</strong> </a><br><br>
+						<a href="https://scholar.google.com/citations?hl=en&authuser=1&user=ky_QjGgAAAAJ"><strong>Good Scholar</strong> </a><br><br>
+						<a href="https://github.com/mayank-git-hub"><strong>GitHub</strong> </a><br><br>
+						<a href="https://medium.com/@mayank2220singh"><strong>Medium</strong> </a><br><br>
+						<a href="tel:+91 84549 51729"><strong>Call: +91 84549 51729</strong> </a>
+					</p>
+				</div>
 			</div>
 		</div>
 	</div>
