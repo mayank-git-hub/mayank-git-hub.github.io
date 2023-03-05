@@ -145,7 +145,17 @@
 
 <script>
 	function load_about_me() {
-		document.getElementById("about_me").innerHTML='<object type="text/html" data="about_me.html" ></object>';
+		var xmlHttp = new XMLHttpRequest();
+
+		xmlHttp.onreadystatechange = function() {
+			if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
+			{
+				document.getElementById("about_me").innerHTML=xmlHttp.responseText;
+			}
+		};
+
+		xmlHttp.open("GET", 'about_me.html', true); // true for asynchronous
+		xmlHttp.send(null);
 	}
 	load_about_me()
 </script>
