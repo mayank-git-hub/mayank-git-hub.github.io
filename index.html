@@ -113,7 +113,7 @@
 			</div>
 
 		</div>
-		<div class="col-lg-4 pt-5">
+		<!-- <div class="col-lg-4 pt-5">
 			<div class="row py-5 px-4 bg-light mb-5 shadow mx-1">
 				<div class="col text-center">
 					<img class="pb-5" src="images/profileCircular512X512.png" width="100%" style="max-width: 200px">
@@ -138,10 +138,17 @@
 					</p>
 				</div>
 			</div>
-		</div>
+		</div> -->
+		<div id="about_me"></div>
 	</div>
 </div>
-		
+
+<script>
+	function load_about_me() {
+		document.getElementById("about_me").innerHTML='<object type="text/html" data="about_me.html" ></object>';
+	}
+	load_about_me()
+</script>
 </body>
 	
 </html>
